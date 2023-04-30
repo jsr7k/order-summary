@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box;
+}
+html,
+body {
+    align-items: center;
+    background-image: url(images/pattern-background-desktop.svg) ;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    font-family: 'Red Hat Display', sans-serif;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    min-width: 375px;
+    min-height: 100vh;
+    padding: 0;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    height: 75vh;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 0 15px lightgray;
+    aspect-ratio: 0.65 / 1;
+}
+.container__img {
+    background-image: url(images/illustration-hero.svg);
+    background-size: cover;
+    width: 100%;
+    height: 33%;
+}
+.container__text {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 10% 10% 0 10% ;
+}
+h2 {
+font-size: 1.7rem;
+font-weight: 900;
+margin: 0;
+}
+.main-text {
+    text-align: center;
+    color: lightslategray;
+    font-size: 1rem;
+    padding: 0 10% 0 10%;
+}
+
+/* .container__music-icon {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    flex-grow: 1;
+    flex-shrink: 1;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0;
+} */
+.container__music-icon {
+    background-color: rgb(250, 250, 250);
+    display: grid;
+    height: 12.5%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    place-items: center;
+    margin: 0 10% 0 10%;
+    border-radius: 10px;
+}
+.plan, 
+.price {
+    margin: 0;
+    padding: 0;
+}
+.container__music-icon--change {
+    font-weight: 700;
+}
+.container__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10% 0 10%;
+    height: 7.5%;
+    margin-top: 5%;
+}
+.container__button--payment {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: #4526df;
+    border: none;
+    color: white;
+    font-weight: 500;
+    font-size: 1.1rem;
+    box-shadow: 0 10px 15px hsla(228, 68%, 55%, 0.733);
+}
+.container__anchor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10% 0 10%;
+    height: 7.5%;
+    margin-top: 5%;
+}
+.container__anchor--single {
+    text-decoration: none;
+    font-weight: 700;
+    color: gray;
+}
+.attribution { 
+    font-size: 11px; 
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+
